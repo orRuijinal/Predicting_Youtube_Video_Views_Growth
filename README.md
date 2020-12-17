@@ -23,5 +23,5 @@ There are over 250 features in the original data set and even with preprocessing
 LASSO, RIDGE, Elastic Net: First by splitting 80\% of our data into training set and 20\% as our validation set. After standardizing the data set, we can decide LASSO, Ridge, or Elastic Net by fitting a 10-fold cross-validation on our training data set with different alpha from 0, 0.1, 0.2,...1 (alpha = 0 corresponds to Ridge, alpha = 1 corresponds to LASSO and alpha between 0 and 1 corresponds to Elastic Net) to decide our parameter alpha. We'll never know which method gives the best result, so comparing all methods' performance is necessary here.
 
 
-## Model Fitting
+## Model Fitting(Tree based Methods: Random Forest, Bagging, Boosting)
 After deciding our features, we fitted our most “important” variables into random forest, bagging, boosting, Ridge, and LASSO. We conducted a 10-fold cross validation to decided the parameter mtry, and mtry = 19 gives the lowest RMSE. Table 4 shows that our random forest model had the lowest RMSE and it beats the other models. So, we chose Random Forest as our final model because of its predicting ability.
